@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" style="max-width: 600px; margin-top: 40px;">
+    <div class="card" style="padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 12px;">
+        <h2 style="text-align:center; margin-bottom: 25px;">{{ titulo }}</h2>
+
+        {% if form.errors %}
+            <div class="alert alert-danger" style="background-color:#ffe6e6; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <strong>Corrija os erros abaixo:</strong>
+                <ul>
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <li>{{ field.label }}: {{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-group" style="margin-bottom: 20px;">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {% if field.help_text %}
+                        <small class="form-text text-muted">{{ field.help_text }}</small>
+                    {% endif %}
+                </div>
+            {% endfor %}
+
+            <div style="display:flex; justify-content: space-between; align-items: center; margin-top: 30px;">
+                <button type="submit" class="btn" style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:8px; font-size:16px; cursor:pointer;">
+                    💾 Salvar
+                </button>
+                <a href="{% url 'home' %}" class="btn" style="background-color:#f0f0f0; color:#333; padding:10px 20px; border:none; border-radius:8px; text-decoration:none; font-size:16px;">
+                    ⬅️ Voltar
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    /* Estilização inputs */
+    .form-control {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .form-control:focus {
+        border-color: #4CAF50;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        outline: none;
+    }
+
+    .form-text.text-muted {
+        font-size: 12px;
+        color: #888;
+    }
+</style>
+{% endblock %}

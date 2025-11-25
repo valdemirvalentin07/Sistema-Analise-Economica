@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Excluir Indicador</h2>
+    <p>Tem certeza que deseja excluir <strong>{{ indicador.nome }}</strong>?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-delete">🗑️ Excluir</button>
+        <a href="{% url 'indicadores_lista' %}" class="btn btn-view">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

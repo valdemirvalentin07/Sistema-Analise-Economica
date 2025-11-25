@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>📊 Lista de Indicadores</h2>
+
+    <!-- Botão voltar -->
+    <a href="{% url 'home' %}" class="btn btn-back">⬅️ Voltar</a>
+
+    <!-- Botão adicionar -->
+    <a href="{% url 'adicionar_indicador' %}" class="btn btn-add">➕ Novo Indicador</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Valor</th>
+                <th>Quantidade</th>
+                <th>Lucro %</th>
+                <th>Valor Total</th>
+                <th>Lucro Total</th>
+                <th>Atualizado em</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in indicadores %}
+            <tr>
+                <td>{{ i.nome }}</td>
+                <td>{{ i.categoria }}</td>
+                <td>R$ {{ i.valor|floatformat:2 }}</td>
+                <td>{{ i.quantidade }}</td>
+                <td>{{ i.percentual_lucro }}%</td>
+                <td>R$ {{ i.valor_total|floatformat:2 }}</td>
+                <td>R$ {{ i.lucro_total|floatformat:2 }}</td>
+                <td>{{ i.data_atualizacao|date:"d/m/Y" }}</td>
+                <td>
+                    <a href="{% url 'editar_indicador' i.id %}" class="btn-edit">✏️</a>
+                    <a href="{% url 'excluir_indicador' i.id %}" class="btn-delete">🗑️</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="9">Nenhum indicador cadastrado.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"><strong>Total Geral:</strong></td>
+                <td><strong>R$ {{ soma_valor_total|floatformat:2 }}</strong></td>
+                <td><strong>R$ {{ soma_lucro_total|floatformat:2 }}</strong></td>
+                <td colspan="2"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+{% endblock %}
