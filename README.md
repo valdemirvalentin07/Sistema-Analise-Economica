@@ -75,6 +75,12 @@ Sistema-Analise-Economica/
 └── manage.py # Gerenciador Django
 
 
+### **Cobertura de testes**
+
+<img width="1324" height="648" alt="image" src="https://github.com/user-attachments/assets/6bbbb71b-1cb9-433d-8ad0-ed7a6a8ae0b8" />
+
+
+
 ## ⚙️ Como Rodar o Projeto
 
 ### **1️⃣ Criar ambiente virtual**
