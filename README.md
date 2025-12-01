@@ -74,16 +74,20 @@ Sistema-Analise-Economica/
 ### **1️⃣ Criar ambiente virtual**
 python -m venv venv
 
-2️⃣ Ativar ambiente
+### **2️⃣ Ativar ambiente**
+
 venv\Scripts\activate
 
-3️⃣ Instalar dependências
+### **3️⃣ Instalar dependências**
+
 pip install -r requirements.txt
 
-4️⃣ Aplicar migrações
+### **4️⃣ Aplicar migrações**
+
 python manage.py migrate
 
-5️⃣ Rodar servidor
+### **5️⃣ Rodar servidor**
+
 python manage.py runserver
 
 http://127.0.0.1:8000/
