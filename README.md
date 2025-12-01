@@ -16,16 +16,20 @@ O sistema permite cadastrar, editar, excluir e visualizar indicadores com cálcu
 - **Requests** (para consumo da API)
 - **Power BI** (integração via API JSON)
 
----
+
+
 
 ## 📸 Interface do Sistema
 
 ### **Tela login**
+
 <img width="1863" height="881" alt="Captura de tela 2025-12-01 125651" src="https://github.com/user-attachments/assets/f8c23b00-71cd-44c9-98ab-bda2c945004b" />
 
 
 ### **Tela principal**
----<img width="1509" height="906" alt="Captura de tela 2025-12-01 124745" src="https://github.com/user-attachments/assets/0dc2c124-fa2b-42ca-b27b-e7659592e1e2" />
+
+---<img width="1854" height="900" alt="Captura de tela 2025-12-01 130256" src="https://github.com/user-attachments/assets/2eb1b7ad-bb50-4d0e-a089-4cfc9b9f39b5" />
+
 
 
 ### **Lista de Indicadores**
@@ -38,6 +42,8 @@ O sistema permite cadastrar, editar, excluir e visualizar indicadores com cálcu
 
 Sistema-Analise-Economica/
 │
+
+
 ├── economia/ # Configurações do projeto
 
 
