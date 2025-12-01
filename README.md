@@ -77,7 +77,8 @@ Sistema-Analise-Economica/
 
 ### **Cobertura de testes**
 
-<img width="1324" height="648" alt="image" src="https://github.com/user-attachments/assets/6bbbb71b-1cb9-433d-8ad0-ed7a6a8ae0b8" />
+<img width="1329" height="665" alt="image" src="https://github.com/user-attachments/assets/e12ead62-d293-4fbc-afb2-0a4620faac93" />
+
 
 
 
