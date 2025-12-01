@@ -28,7 +28,7 @@ O sistema permite cadastrar, editar, excluir e visualizar indicadores com cálcu
 ---<img width="1509" height="906" alt="Captura de tela 2025-12-01 124745" src="https://github.com/user-attachments/assets/0dc2c124-fa2b-42ca-b27b-e7659592e1e2" />
 
 
-### **Dashboard de Indicadores**
+### **Lista de Indicadores**
 
 
 <img width="1541" height="690" alt="Captura de tela 2025-12-01 124810" src="https://github.com/user-attachments/assets/a6363361-fc0d-442f-bfbd-4e0d4af1a82a" />
@@ -39,21 +39,35 @@ O sistema permite cadastrar, editar, excluir e visualizar indicadores com cálcu
 Sistema-Analise-Economica/
 │
 ├── economia/ # Configurações do projeto
+
+
 ├── indicadores/ # App principal (CRUD + API)
+
+
 │ ├── models.py # Modelo Indicador
+
+
 │ ├── views.py # Lógica das páginas e API
+
+
 │ ├── urls.py # Rotas do app
+
+
 │ ├── tests/ # Testes automatizados
+
+
+
 │ └── templates/ # Interface HTML
 │
 ├── usuarios/ # Sistema de login/autenticação
+
+
 ├── venv/ # Ambiente virtual
+
+
+
 └── manage.py # Gerenciador Django
 
-yaml
-Copiar código
-
----
 
 ## ⚙️ Como Rodar o Projeto
 
