@@ -20,13 +20,20 @@ O sistema permite cadastrar, editar, excluir e visualizar indicadores com cálcu
 
 ## 📸 Interface do Sistema
 
+### **Tela login**
+<img width="1863" height="881" alt="Captura de tela 2025-12-01 125651" src="https://github.com/user-attachments/assets/f8c23b00-71cd-44c9-98ab-bda2c945004b" />
+
+
 ### **Tela principal**
-![Tela Home](docs/tela-home.png)
+---<img width="1509" height="906" alt="Captura de tela 2025-12-01 124745" src="https://github.com/user-attachments/assets/0dc2c124-fa2b-42ca-b27b-e7659592e1e2" />
+
 
 ### **Dashboard de Indicadores**
-![Dashboard](docs/dashboard.png)
 
----
+
+<img width="1541" height="690" alt="Captura de tela 2025-12-01 124810" src="https://github.com/user-attachments/assets/a6363361-fc0d-442f-bfbd-4e0d4af1a82a" />
+
+
 ## 📁 Estrutura do Projeto
 
 Sistema-Analise-Economica/
