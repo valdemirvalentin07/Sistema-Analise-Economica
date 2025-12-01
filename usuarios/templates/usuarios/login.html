@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sistema Econômico</title>
     <style>
-        /* === Reset e estrutura básica === */
         body {
             margin: 0;
             font-family: "Segoe UI", sans-serif;
@@ -14,8 +13,6 @@
             display: flex;
             flex-direction: column;
         }
-
-        /* === Navbar === */
         .navbar {
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
@@ -25,16 +22,12 @@
             font-weight: 600;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
-
-        /* === Container central === */
         .container {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
-        /* === Card de login === */
         .login-card {
             background: white;
             border-radius: 16px;
@@ -43,19 +36,15 @@
             width: 350px;
             text-align: center;
         }
-
         .login-card h2 {
             color: #0f766e;
             margin-bottom: 25px;
         }
-
-        /* === Campos do formulário === */
         form {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-
         input {
             padding: 10px;
             border: 1px solid #ccc;
@@ -63,14 +52,11 @@
             font-size: 1rem;
             width: 100%;
         }
-
         input:focus {
             outline: none;
             border-color: #10b981;
             box-shadow: 0 0 5px #10b98155;
         }
-
-        /* === Botão === */
         button {
             background: linear-gradient(90deg, #0ea5e9, #10b981);
             color: white;
@@ -81,13 +67,10 @@
             cursor: pointer;
             transition: transform 0.2s, opacity 0.2s;
         }
-
         button:hover {
             transform: scale(1.05);
             opacity: 0.9;
         }
-
-        /* === Rodapé opcional === */
         footer {
             text-align: center;
             padding: 10px;
@@ -95,8 +78,6 @@
             font-size: 0.9rem;
             opacity: 0.8;
         }
-
-        /* === Mensagem de erro === */
         .error {
             color: red;
             font-size: 0.9rem;
@@ -113,8 +94,8 @@
         <div class="login-card">
             <h2>Entrar</h2>
 
-            {% if form.errors %}
-                <p class="error">Usuário ou senha incorretos.</p>
+            {% if error %}
+                <p class="error">{{ error }}</p>
             {% endif %}
 
             <form method="post">
