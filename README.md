@@ -38,6 +38,15 @@ O sistema permite cadastrar, editar, excluir e visualizar indicadores com cálcu
 <img width="1541" height="690" alt="Captura de tela 2025-12-01 124810" src="https://github.com/user-attachments/assets/a6363361-fc0d-442f-bfbd-4e0d4af1a82a" />
 
 
+
+### **Cobertura de testes**
+
+<img width="1322" height="719" alt="image" src="https://github.com/user-attachments/assets/a04ce2ed-54bd-4bae-a926-0046bc8293d6" />
+
+
+
+
+
 ## 📁 Estrutura do Projeto
 
 Sistema-Analise-Economica/
@@ -73,11 +82,6 @@ Sistema-Analise-Economica/
 
 
 └── manage.py # Gerenciador Django
-
-
-### **Cobertura de testes**
-
-<img width="1329" height="665" alt="image" src="https://github.com/user-attachments/assets/e12ead62-d293-4fbc-afb2-0a4620faac93" />
 
 
 
